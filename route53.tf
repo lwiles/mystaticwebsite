@@ -8,7 +8,7 @@ resource "aws_route53_record" "static-website" {
   type    = "A"
 
   alias {
-    name                   = aws_s3_bucket_website_configuration.website.website_endpoint
+    name                   = aws_s3_bucket_website_configuration.website.website_domain
     zone_id                = aws_s3_bucket.static_website.hosted_zone_id
     evaluate_target_health = false
   }
@@ -20,7 +20,7 @@ resource "aws_route53_record" "www" {
   type    = "A"
 
   alias {
-    name                   = aws_s3_bucket_website_configuration.redirect_bucket.website_endpoint
+    name                   = aws_s3_bucket_website_configuration.redirect_bucket.website_domain
     zone_id                = aws_s3_bucket.redirect_bucket.hosted_zone_id
     evaluate_target_health = false
   }

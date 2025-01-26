@@ -3,12 +3,12 @@ variable "tf-profile" {
   type        = string
 }
 
-variable "root-domain-bucket" {
-  description = "The name of S3 bucket where the static site will be stored"
+variable "root-domain" {
+  description = "The primary domain name"
   type        = string
 }
 
-variable "subdomain-bucket" {
-  description = "The name of the S3 bucket that will redirect to root domain bucket"
+variable "www-subdomain" {
+  description = "Represents the 'www' subdomain"
   type        = string
 }

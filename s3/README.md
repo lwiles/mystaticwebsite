@@ -1,4 +1,4 @@
-# AWS Route 53 module
+# AWS S3 module
 Configures the AWS S3 buckets for a static website and a "www" subdomain redirect bucket.
 
 ## Requirements

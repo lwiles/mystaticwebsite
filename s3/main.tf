@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "website_bucket" {
 
 # Create redirect/subdomain bucket
 resource "aws_s3_bucket" "redirect_bucket" {
-  bucket = format("%s.%s", var.www-subdomain, var.root-domain)
+  bucket = var.www-domain
 }
 
 resource "aws_s3_bucket_ownership_controls" "website_bucket" {

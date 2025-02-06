@@ -1,3 +1,3 @@
 # mystaticwebsite
 
-A static AWS S3 website built with Terraform.
+A static AWS S3 website deployed via Terraform.
